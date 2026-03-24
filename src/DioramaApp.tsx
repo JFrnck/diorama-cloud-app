@@ -1,7 +1,8 @@
-import React from 'react'
+import { RouterProvider } from 'react-router-dom';
+import { appRouter } from './routes/app.routes';
 
-export const DioramaApp = () => {
+export function DioramaApp() {
   return (
-    <div>DioramaApp</div>
-  )
+    <RouterProvider router={appRouter} />
+  );
 }
