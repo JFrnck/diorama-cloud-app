@@ -12,7 +12,7 @@ export const AdminProfesoresPage = () => {
           <h2 className="text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-2">Profesores</h2>
           <p className="text-on-surface-variant font-medium text-sm">Gestiona el cuerpo docente, especialidades y disponibilidad del sistema.</p>
         </div>
-        <button className="bg-gradient-to-br from-diorama-primary to-diorama-primary-container text-on-diorama-primary px-5 py-2.5 rounded-md font-bold text-sm flex items-center gap-2 shadow-[0_4px_12px_rgba(171,199,255,0.3)] hover:translate-y-[-1px] transition-transform">
+        <button className="bg-linear-to-br from-diorama-primary to-diorama-primary-container text-on-diorama-primary px-5 py-2.5 rounded-md font-bold text-sm flex items-center gap-2 shadow-[0_4px_12px_rgba(171,199,255,0.3)] hover:-translate-y-px transition-transform">
           <UserPlus size={18} />
           Añadir Nuevo Profesor
         </button>
@@ -141,7 +141,7 @@ const StatCard = ({ title, value, subValue, borderColor, subColor }: any) => (
 );
 
 const TeacherRow = ({ initials, bgInitials, name, id, email, spec, status, statusColor, dotColor }: any) => (
-  <tr className="hover:bg-white/[0.03] transition-colors group">
+  <tr className="hover:bg-white/3 transition-colors group">
     <td className="px-6 py-4">
       <div className="flex items-center gap-3">
         <div className={`w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs border ${bgInitials}`}>{initials}</div>
