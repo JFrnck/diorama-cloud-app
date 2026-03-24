@@ -1,6 +1,8 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AdminLayout } from '../apps/admin/components/AdminLayout';
 import { AdminDashboardPage } from '../apps/admin/pages/AdminDashboardPage';
+// Importamos la nueva página
+import { AdminProfesoresPage } from '../apps/admin/pages/AdminProfesoresPage';
 
 export const appRouter = createBrowserRouter([
   {
@@ -15,8 +17,11 @@ export const appRouter = createBrowserRouter([
         path: "dashboard",
         element: <AdminDashboardPage />,
       },
-      // Aquí agregaremos las demás páginas de admin después:
-      // { path: "profesores", element: <ProfesoresPage /> }
+      // Añadimos la nueva ruta aquí
+      {
+        path: "profesores",
+        element: <AdminProfesoresPage />,
+      }
     ],
   },
 ]);
