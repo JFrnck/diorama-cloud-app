@@ -6,7 +6,7 @@ export const AdminSidebar = () => {
   const isActive = (path: string) => location.pathname.includes(path);
 
   return (
-    <aside className="h-screen w-64 flex flex-col fixed top-0 left-0 bg-surface-container-low shadow-[20px_0_40px_rgba(0,0,0,0.45)] py-6 justify-between z-[60]">
+    <aside className="h-screen w-64 flex flex-col fixed top-0 left-0 bg-surface-container-low shadow-[20px_0_40px_rgba(0,0,0,0.45)] py-6 justify-between z-60">
       <div className="flex flex-col">
         <div className="px-6 mb-10 flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg bg-diorama-primary-container flex items-center justify-center text-on-diorama-primary font-bold">DI</div>

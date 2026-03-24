@@ -22,7 +22,7 @@ export const AdminTopbar = () => {
           <Settings size={20} />
         </button>
         
-        <div className="h-8 w-[1px] bg-outline-variant/30 mx-2"></div>
+        <div className="h-8 w-px bg-outline-variant/30 mx-2"></div>
         
         <div className="flex items-center gap-3 cursor-pointer group">
           <div className="text-right hidden sm:block">

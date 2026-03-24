@@ -9,10 +9,10 @@ export const AdminDashboardPage = () => {
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-        <KPICard icon={<Users size={20} className="text-[#abc7ff]" />} bgIcon="bg-[#448fff]/20" badgeText="+12%" badgeColor="text-[#abc7ff] bg-[#abc7ff]/10" title="Total Alumnos" value="1240" />
+        <KPICard icon={<Users size={20} className="text-diorama-primary" />} bgIcon="bg-[#448fff]/20" badgeText="+12%" badgeColor="text-[#abc7ff] bg-[#abc7ff]/10" title="Total Alumnos" value="1240" />
         <KPICard icon={<CheckCircle2 size={20} className="text-[#a4c9ff]" />} bgIcon="bg-[#4993e9]/20" badgeText="Active" badgeColor="text-[#a4c9ff] bg-[#a4c9ff]/10" title="Asistencia Hoy" value="98%" />
         <KPICard icon={<UserPlus size={20} className="text-[#acc9eb]" />} bgIcon="bg-[#2e4b68]/20" badgeText="MTD" badgeColor="text-[#acc9eb] bg-[#acc9eb]/10" title="Nuevos Registros" value="45" />
-        <KPICard icon={<AlertCircle size={20} className="text-[#ffb4ab]" />} bgIcon="bg-[#93000a]/20" badgeText="Urgent" badgeColor="text-[#ffb4ab] bg-[#ffb4ab]/10" title="Reportes Pendientes" value="12" />
+        <KPICard icon={<AlertCircle size={20} className="text-diorama-error" />} bgIcon="bg-[#93000a]/20" badgeText="Urgent" badgeColor="text-[#ffb4ab] bg-[#ffb4ab]/10" title="Reportes Pendientes" value="12" />
       </div>
 
       <section className="bg-surface-container rounded-xl overflow-hidden shadow-xl border-t border-white/5">
@@ -27,7 +27,7 @@ export const AdminDashboardPage = () => {
           </div>
           <div className="flex items-center gap-3">
             <button className="bg-surface-container-high text-on-surface-variant hover:text-on-surface p-2 rounded-lg transition-colors"><Filter size={18} /></button>
-            <button className="bg-gradient-to-r from-[#abc7ff] to-[#448fff] text-[#002f66] px-4 py-2 rounded-md font-bold text-xs flex items-center gap-2 transition-transform hover:scale-105 active:scale-95"><Plus size={16} /> NUEVO REGISTRO</button>
+            <button className="bg-linear-to-r from-diorama-primary to-diorama-primary-container text-on-diorama-primary px-4 py-2 rounded-md font-bold text-xs flex items-center gap-2 transition-transform hover:scale-105 active:scale-95"><Plus size={16} /> NUEVO REGISTRO</button>
           </div>
         </div>
 
