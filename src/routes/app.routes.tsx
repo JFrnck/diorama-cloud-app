@@ -1,8 +1,11 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AdminLayout } from '../apps/admin/components/AdminLayout';
 import { AdminDashboardPage } from '../apps/admin/pages/AdminDashboardPage';
-// Importamos la nueva página
 import { AdminProfesoresPage } from '../apps/admin/pages/AdminProfesoresPage';
+import { AdminAlumnosPage } from '../apps/admin/pages/AdminAlumnosPage';
+import { AdminEstructuraPage } from '../apps/admin/pages/AdminEstructuraPage';
+// 1. Importas la página de cursos
+import { AdminCursosPage } from '../apps/admin/pages/AdminCursosPage';
 
 export const appRouter = createBrowserRouter([
   {
@@ -17,10 +20,21 @@ export const appRouter = createBrowserRouter([
         path: "dashboard",
         element: <AdminDashboardPage />,
       },
-      // Añadimos la nueva ruta aquí
       {
         path: "profesores",
         element: <AdminProfesoresPage />,
+      },
+      {
+        path: "alumnos",
+        element: <AdminAlumnosPage />,
+      },
+      {
+        path: "cursos",
+        element: <AdminCursosPage />,
+      },
+      {
+        path: "estructura",
+        element: <AdminEstructuraPage />,
       }
     ],
   },
